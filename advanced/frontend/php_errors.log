@@ -1,0 +1,14 @@
+[06-Dec-2017 11:53:11 UTC] PHP Parse error:  syntax error, unexpected '' '' (T_CONSTANT_ENCAPSED_STRING), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ubuntu/workspace/advanced/frontend/views/cars/garage.php on line 12
+[06-Dec-2017 11:53:11 UTC] PHP Stack trace:
+[06-Dec-2017 11:53:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/advanced/frontend/web/index.php:0
+[06-Dec-2017 11:53:11 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/advanced/frontend/web/index.php:17
+[06-Dec-2017 11:53:11 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Application.php:386
+[06-Dec-2017 11:53:11 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/web/Application.php:103
+[06-Dec-2017 11:53:11 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Module.php:528
+[06-Dec-2017 11:53:11 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Controller.php:157
+[06-Dec-2017 11:53:11 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[06-Dec-2017 11:53:11 UTC] PHP   8. frontend\controllers\CarsController->actionGarage() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[06-Dec-2017 11:53:11 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/advanced/frontend/controllers/CarsController.php:85
+[06-Dec-2017 11:53:11 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Controller.php:384
+[06-Dec-2017 11:53:11 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:152
+[06-Dec-2017 11:53:11 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:250

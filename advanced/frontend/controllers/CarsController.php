@@ -75,6 +75,17 @@ class CarsController extends Controller
     }
 
     /**
+     * Creates a Garage model.
+     */
+    public function actionGarage()
+    {
+        $garage = cars::find()->all();
+        return $this->render('garage', [
+                             'garage' => $garage,
+                             ]);
+    }
+
+    /**
      * Updates an existing Cars model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
