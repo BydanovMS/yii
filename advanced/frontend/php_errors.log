@@ -12,3 +12,139 @@
 [06-Dec-2017 11:53:11 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Controller.php:384
 [06-Dec-2017 11:53:11 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:152
 [06-Dec-2017 11:53:11 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:250
+[07-Dec-2017 09:24:14 UTC] PHP Fatal error:  Class 'frontend\models\Cars' not found in /home/ubuntu/workspace/advanced/frontend/models/CarsSearch.php on line 14
+[07-Dec-2017 09:24:14 UTC] PHP Stack trace:
+[07-Dec-2017 09:24:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/advanced/frontend/web/index.php:0
+[07-Dec-2017 09:24:14 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/advanced/frontend/web/index.php:17
+[07-Dec-2017 09:24:14 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Application.php:386
+[07-Dec-2017 09:24:14 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/web/Application.php:103
+[07-Dec-2017 09:24:14 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Module.php:528
+[07-Dec-2017 09:24:14 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Controller.php:157
+[07-Dec-2017 09:24:14 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 09:24:14 UTC] PHP   8. frontend\controllers\CarsController->actionIndex() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 09:24:14 UTC] PHP   9. spl_autoload_call() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:38
+[07-Dec-2017 09:24:14 UTC] PHP  10. yii\BaseYii::autoload() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:38
+[07-Dec-2017 09:24:14 UTC] PHP  11. include() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/BaseYii.php:293
+[07-Dec-2017 09:27:50 UTC] PHP Fatal error:  Class 'frontend\models\Sellers' not found in /home/ubuntu/workspace/advanced/frontend/models/Cars.php on line 39
+[07-Dec-2017 09:27:50 UTC] PHP Stack trace:
+[07-Dec-2017 09:27:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/advanced/frontend/web/index.php:0
+[07-Dec-2017 09:27:50 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/advanced/frontend/web/index.php:17
+[07-Dec-2017 09:27:50 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Application.php:386
+[07-Dec-2017 09:27:50 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/web/Application.php:103
+[07-Dec-2017 09:27:50 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Module.php:528
+[07-Dec-2017 09:27:50 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Controller.php:157
+[07-Dec-2017 09:27:50 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 09:27:50 UTC] PHP   8. yii\gii\controllers\DefaultController->actionView() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 09:27:50 UTC] PHP   9. yii\gii\generators\crud\Generator->generate() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2-gii/controllers/DefaultController.php:50
+[07-Dec-2017 09:27:50 UTC] PHP  10. yii\gii\Generator->render() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2-gii/generators/crud/Generator.php:182
+[07-Dec-2017 09:27:50 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2-gii/Generator.php:317
+[07-Dec-2017 09:27:50 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:250
+[07-Dec-2017 09:27:50 UTC] PHP  13. require() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:332
+[07-Dec-2017 09:27:50 UTC] PHP  14. yii\base\Model->safeAttributes() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2-gii/generators/crud/default/views/_form.php:11
+[07-Dec-2017 09:27:50 UTC] PHP  15. yii\base\Model->scenarios() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Model.php:759
+[07-Dec-2017 09:27:50 UTC] PHP  16. yii\base\Model->getValidators() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Model.php:189
+[07-Dec-2017 09:27:50 UTC] PHP  17. yii\base\Model->createValidators() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Model.php:413
+[07-Dec-2017 09:27:50 UTC] PHP  18. frontend\models\cars->rules() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Model.php:447
+[07-Dec-2017 09:28:22 UTC] PHP Fatal error:  Class 'frontend\models\Sellers' not found in /home/ubuntu/workspace/advanced/frontend/models/Cars.php on line 39
+[07-Dec-2017 09:28:22 UTC] PHP Stack trace:
+[07-Dec-2017 09:28:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/advanced/frontend/web/index.php:0
+[07-Dec-2017 09:28:22 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/advanced/frontend/web/index.php:17
+[07-Dec-2017 09:28:22 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Application.php:386
+[07-Dec-2017 09:28:22 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/web/Application.php:103
+[07-Dec-2017 09:28:22 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Module.php:528
+[07-Dec-2017 09:28:22 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Controller.php:157
+[07-Dec-2017 09:28:22 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 09:28:22 UTC] PHP   8. yii\gii\controllers\DefaultController->actionView() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 09:28:22 UTC] PHP   9. yii\gii\generators\crud\Generator->generate() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2-gii/controllers/DefaultController.php:50
+[07-Dec-2017 09:28:22 UTC] PHP  10. yii\gii\Generator->render() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2-gii/generators/crud/Generator.php:182
+[07-Dec-2017 09:28:22 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2-gii/Generator.php:317
+[07-Dec-2017 09:28:22 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:250
+[07-Dec-2017 09:28:22 UTC] PHP  13. require() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:332
+[07-Dec-2017 09:28:22 UTC] PHP  14. yii\base\Model->safeAttributes() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2-gii/generators/crud/default/views/_form.php:11
+[07-Dec-2017 09:28:22 UTC] PHP  15. yii\base\Model->scenarios() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Model.php:759
+[07-Dec-2017 09:28:22 UTC] PHP  16. yii\base\Model->getValidators() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Model.php:189
+[07-Dec-2017 09:28:22 UTC] PHP  17. yii\base\Model->createValidators() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Model.php:413
+[07-Dec-2017 09:28:22 UTC] PHP  18. frontend\models\cars->rules() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Model.php:447
+[07-Dec-2017 09:37:13 UTC] PHP Fatal error:  Class 'frontend\models\Cars' not found in /home/ubuntu/workspace/advanced/frontend/models/CarsSearch.php on line 14
+[07-Dec-2017 09:37:13 UTC] PHP Stack trace:
+[07-Dec-2017 09:37:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/advanced/frontend/web/index.php:0
+[07-Dec-2017 09:37:13 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/advanced/frontend/web/index.php:17
+[07-Dec-2017 09:37:13 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Application.php:386
+[07-Dec-2017 09:37:13 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/web/Application.php:103
+[07-Dec-2017 09:37:13 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Module.php:528
+[07-Dec-2017 09:37:13 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Controller.php:157
+[07-Dec-2017 09:37:13 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 09:37:13 UTC] PHP   8. frontend\controllers\CarsController->actionIndex() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 09:37:13 UTC] PHP   9. spl_autoload_call() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:38
+[07-Dec-2017 09:37:13 UTC] PHP  10. yii\BaseYii::autoload() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:38
+[07-Dec-2017 09:37:13 UTC] PHP  11. include() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/BaseYii.php:293
+[07-Dec-2017 10:55:44 UTC] PHP Parse error:  syntax error, unexpected 'as' (T_AS), expecting ')' in /home/ubuntu/workspace/advanced/frontend/views/cars/garage.php on line 3
+[07-Dec-2017 10:55:44 UTC] PHP Stack trace:
+[07-Dec-2017 10:55:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/advanced/frontend/web/index.php:0
+[07-Dec-2017 10:55:44 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/advanced/frontend/web/index.php:17
+[07-Dec-2017 10:55:44 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Application.php:386
+[07-Dec-2017 10:55:44 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/web/Application.php:103
+[07-Dec-2017 10:55:44 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Module.php:528
+[07-Dec-2017 10:55:44 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Controller.php:157
+[07-Dec-2017 10:55:44 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 10:55:44 UTC] PHP   8. frontend\controllers\CarsController->actionGarage() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 10:55:44 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/advanced/frontend/controllers/CarsController.php:85
+[07-Dec-2017 10:55:44 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Controller.php:384
+[07-Dec-2017 10:55:44 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:152
+[07-Dec-2017 10:55:44 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:250
+[07-Dec-2017 11:23:38 UTC] PHP Parse error:  syntax error, unexpected ';', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/ubuntu/workspace/advanced/frontend/views/cars/garage.php on line 36
+[07-Dec-2017 11:23:38 UTC] PHP Stack trace:
+[07-Dec-2017 11:23:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/advanced/frontend/web/index.php:0
+[07-Dec-2017 11:23:38 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/advanced/frontend/web/index.php:17
+[07-Dec-2017 11:23:38 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Application.php:386
+[07-Dec-2017 11:23:38 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/web/Application.php:103
+[07-Dec-2017 11:23:38 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Module.php:528
+[07-Dec-2017 11:23:38 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Controller.php:157
+[07-Dec-2017 11:23:38 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 11:23:38 UTC] PHP   8. frontend\controllers\CarsController->actionGarage() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 11:23:38 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/advanced/frontend/controllers/CarsController.php:85
+[07-Dec-2017 11:23:38 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Controller.php:384
+[07-Dec-2017 11:23:38 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:152
+[07-Dec-2017 11:23:38 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:250
+[07-Dec-2017 11:58:52 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/advanced/frontend/views/cars/garage.php on line 47
+[07-Dec-2017 11:58:52 UTC] PHP Stack trace:
+[07-Dec-2017 11:58:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/advanced/frontend/web/index.php:0
+[07-Dec-2017 11:58:52 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/advanced/frontend/web/index.php:17
+[07-Dec-2017 11:58:52 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Application.php:386
+[07-Dec-2017 11:58:52 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/web/Application.php:103
+[07-Dec-2017 11:58:52 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Module.php:528
+[07-Dec-2017 11:58:52 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Controller.php:157
+[07-Dec-2017 11:58:52 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 11:58:52 UTC] PHP   8. frontend\controllers\CarsController->actionGarage() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 11:58:52 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/advanced/frontend/controllers/CarsController.php:85
+[07-Dec-2017 11:58:52 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Controller.php:384
+[07-Dec-2017 11:58:52 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:152
+[07-Dec-2017 11:58:52 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:250
+[07-Dec-2017 11:59:11 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/advanced/frontend/views/cars/garage.php on line 47
+[07-Dec-2017 11:59:11 UTC] PHP Stack trace:
+[07-Dec-2017 11:59:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/advanced/frontend/web/index.php:0
+[07-Dec-2017 11:59:11 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/advanced/frontend/web/index.php:17
+[07-Dec-2017 11:59:11 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Application.php:386
+[07-Dec-2017 11:59:11 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/web/Application.php:103
+[07-Dec-2017 11:59:11 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Module.php:528
+[07-Dec-2017 11:59:11 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Controller.php:157
+[07-Dec-2017 11:59:11 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 11:59:11 UTC] PHP   8. frontend\controllers\CarsController->actionGarage() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 11:59:11 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/advanced/frontend/controllers/CarsController.php:85
+[07-Dec-2017 11:59:11 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Controller.php:384
+[07-Dec-2017 11:59:11 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:152
+[07-Dec-2017 11:59:11 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:250
+[07-Dec-2017 11:59:13 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/advanced/frontend/views/cars/garage.php on line 47
+[07-Dec-2017 11:59:13 UTC] PHP Stack trace:
+[07-Dec-2017 11:59:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/advanced/frontend/web/index.php:0
+[07-Dec-2017 11:59:13 UTC] PHP   2. yii\base\Application->run() /home/ubuntu/workspace/advanced/frontend/web/index.php:17
+[07-Dec-2017 11:59:13 UTC] PHP   3. yii\web\Application->handleRequest() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Application.php:386
+[07-Dec-2017 11:59:13 UTC] PHP   4. yii\base\Module->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/web/Application.php:103
+[07-Dec-2017 11:59:13 UTC] PHP   5. yii\base\Controller->runAction() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Module.php:528
+[07-Dec-2017 11:59:13 UTC] PHP   6. yii\base\InlineAction->runWithParams() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Controller.php:157
+[07-Dec-2017 11:59:13 UTC] PHP   7. call_user_func_array:{/home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57}() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 11:59:13 UTC] PHP   8. frontend\controllers\CarsController->actionGarage() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/InlineAction.php:57
+[07-Dec-2017 11:59:13 UTC] PHP   9. yii\base\Controller->render() /home/ubuntu/workspace/advanced/frontend/controllers/CarsController.php:85
+[07-Dec-2017 11:59:13 UTC] PHP  10. yii\base\View->render() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/Controller.php:384
+[07-Dec-2017 11:59:13 UTC] PHP  11. yii\base\View->renderFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:152
+[07-Dec-2017 11:59:13 UTC] PHP  12. yii\base\View->renderPhpFile() /home/ubuntu/workspace/advanced/vendor/yiisoft/yii2/base/View.php:250

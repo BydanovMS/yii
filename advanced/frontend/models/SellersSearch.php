@@ -5,12 +5,12 @@ namespace frontend\models;
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use frontend\models\Cars;
+use frontend\models\Sellers;
 
 /**
- * CarsSearch represents the model behind the search form about `frontend\models\Cars`.
+ * SellersSearch represents the model behind the search form about `frontend\models\Sellers`.
  */
-class CarsSearch extends Cars
+class SellersSearch extends Sellers
 {
     /**
      * @inheritdoc
@@ -18,8 +18,8 @@ class CarsSearch extends Cars
     public function rules()
     {
         return [
-            [['car_id', 'car_sel_id', 'car_year'], 'integer'],
-            [['car_manufacture', 'car_model', 'car_info'], 'safe'],
+            [['sel_id'], 'integer'],
+            [['sel_name', 'sel_tel', 'sel_town'], 'safe'],
         ];
     }
 
@@ -41,7 +41,7 @@ class CarsSearch extends Cars
      */
     public function search($params)
     {
-        $query = Cars::find();
+        $query = Sellers::find();
 
         // add conditions that should always apply here
 
@@ -59,14 +59,12 @@ class CarsSearch extends Cars
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'car_id' => $this->car_id,
-            'car_sel_id' => $this->car_sel_id,
-            'car_year' => $this->car_year,
+            'sel_id' => $this->sel_id,
         ]);
 
-        $query->andFilterWhere(['like', 'car_manufacture', $this->car_manufacture])
-            ->andFilterWhere(['like', 'car_model', $this->car_model])
-            ->andFilterWhere(['like', 'car_info', $this->car_info]);
+        $query->andFilterWhere(['like', 'sel_name', $this->sel_name])
+            ->andFilterWhere(['like', 'sel_tel', $this->sel_tel])
+            ->andFilterWhere(['like', 'sel_town', $this->sel_town]);
 
         return $dataProvider;
     }

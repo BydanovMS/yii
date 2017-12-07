@@ -2,15 +2,15 @@
 
 use yii\helpers\Html;
 
+
 /* @var $this yii\web\View */
 /* @var $model frontend\models\Cars */
 
-$this->title = 'Update Cars: ' . $model->car_id;
+$this->title = 'Create Cars';
 $this->params['breadcrumbs'][] = ['label' => 'Cars', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->car_id, 'url' => ['view', 'id' => $model->car_id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="cars-update">
+<div class="cars-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

@@ -3,16 +3,16 @@
 namespace frontend\controllers;
 
 use Yii;
-use frontend\models\Cars;
-use frontend\models\CarsSearch;
+use frontend\models\Sellers;
+use frontend\models\SellersSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 
 /**
- * CarsController implements the CRUD actions for Cars model.
+ * SellersController implements the CRUD actions for Sellers model.
  */
-class CarsController extends Controller
+class SellersController extends Controller
 {
     /**
      * @inheritdoc
@@ -30,12 +30,12 @@ class CarsController extends Controller
     }
 
     /**
-     * Lists all Cars models.
+     * Lists all Sellers models.
      * @return mixed
      */
     public function actionIndex()
     {
-        $searchModel = new CarsSearch();
+        $searchModel = new SellersSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -45,7 +45,7 @@ class CarsController extends Controller
     }
 
     /**
-     * Displays a single Cars model.
+     * Displays a single Sellers model.
      * @param integer $id
      * @return mixed
      */
@@ -57,16 +57,16 @@ class CarsController extends Controller
     }
 
     /**
-     * Creates a new Cars model.
+     * Creates a new Sellers model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      * @return mixed
      */
     public function actionCreate()
     {
-        $model = new Cars();
+        $model = new Sellers();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->car_id]);
+            return $this->redirect(['view', 'id' => $model->sel_id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -75,18 +75,7 @@ class CarsController extends Controller
     }
 
     /**
-     * Creates a Garage model.
-     */
-    public function actionGarage()
-    {
-        $garage = cars::find()->all();
-        return $this->render('garage', [
-                             'garage' => $garage,
-                             ]);
-    }
-
-    /**
-     * Updates an existing Cars model.
+     * Updates an existing Sellers model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
      * @return mixed
@@ -96,7 +85,7 @@ class CarsController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->car_id]);
+            return $this->redirect(['view', 'id' => $model->sel_id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -105,7 +94,7 @@ class CarsController extends Controller
     }
 
     /**
-     * Deletes an existing Cars model.
+     * Deletes an existing Sellers model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
      * @return mixed
@@ -118,15 +107,15 @@ class CarsController extends Controller
     }
 
     /**
-     * Finds the Cars model based on its primary key value.
+     * Finds the Sellers model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @return Cars the loaded model
+     * @return Sellers the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
-        if (($model = Cars::findOne($id)) !== null) {
+        if (($model = Sellers::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

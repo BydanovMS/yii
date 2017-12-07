@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel frontend\models\CarsSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Мой гараж';
+$this->title = 'Cars';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="cars-index">
@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'car_manufacture',
             'car_model',
             'car_year',
-            'car_info',
+            // 'car_info',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
